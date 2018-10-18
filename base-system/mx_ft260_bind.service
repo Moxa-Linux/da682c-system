@@ -6,7 +6,6 @@ Before=mx_gpio_export.service
 [Service]
 Type=oneshot
 ExecStart=/sbin/mx_ft260_bind start
-ExecStop=/sbin/mx_ft260_bind stop
 RemainAfterExit=yes
 
 [Install]

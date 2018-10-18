@@ -258,14 +258,9 @@ main() {
 }
 
 MAX_GPIO_PORT_NUM=1
-if dmesg | grep -q "ft260 0003:0403:6030.0003"; then
+if dmesg | grep -q "ft260 0003:0403:6030.*"; then
 	# if the UART expansion card is on one slot
-	MAX_GPIO_PORT_NUM=10
-fi
-
-if dmesg | grep -q "ft260 0003:0403:6030.0004"; then
-	# if the UART expansion cards are on two slots
-	MAX_GPIO_PORT_NUM=17
+	MAX_GPIO_PORT_NUM=$(ls /dev/ttyM* | wc -l)
 fi
 
 if [ $# -eq 0 ] || [ $# -gt 2 ]; then

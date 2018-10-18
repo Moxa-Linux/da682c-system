@@ -1,13 +1,3 @@
 ACTION=="add", KERNEL=="0003:0403:6030.*", SUBSYSTEM=="hid", DRIVERS=="hid-generic", \
 RUN+="/bin/bash -c 'echo $kernel > /sys/bus/hid/drivers/hid-generic/unbind'", \
 RUN+="/bin/bash -c 'echo $kernel > /sys/bus/hid/drivers/ft260/bind'"
-#RUN+="/bin/bash -c 'echo $kernel > /home/moxa/bbbb'"
-#RUN+="/bin/bash -c 'mx_ft260_bind $kernel'"
-
-#KERNELS=="0003:0403:6030.*", SUBSYSTEMS=="hid", DRIVERS=="hid-generic", ACTION=="add", \
-#RUN+="/bin/bash -c 'touch /home/moxa/aaaa'", \
-#RUN+="/bin/bash -c 'echo $kernel > /home/moxa/aaaa'"
-#RUN+="/bin/bash -c 'echo $kernel > /sys/bus/hid/drivers/hid-generic/unbind'", \
-#RUN+="/bin/bash -c 'echo $kernel > /sys/bus/hid/drivers/ft260/bind'"
-#RUN+="/sbin/mx_ft260_bind $kernel"
-#RUN+="/bin/bash 'echo $kernel > /home/moxa/aaaa'"

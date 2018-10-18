@@ -4,32 +4,19 @@ ft260_bind() {
 	for filename in /sys/bus/i2c/devices/i2c-*/name; do
 		i2c_devname=$(cat ${filename})
 		if [[ $i2c_devname == *"FT260"* ]]; then
-			#echo $filename
-			#echo $i2c_devname
 			i2c_devpath=$(echo ${filename%/*})
-			echo $i2c_devpath
 			echo "pca9535 0x26" > ${i2c_devpath}/new_device
 			echo "pca9535 0x27" > ${i2c_devpath}/new_device
 		fi
 	done
 }
 
-ft260_unbind() {
-	# check driver is on binding status
-	if dmesg | grep -q "ft260 0003:0403:6030.0003"; then
-		echo $ID > /sys/bus/hid/drivers/ft260/unbind
-	fi
-}
-
 case "$1" in
 	start)
 		ft260_bind
 	;;
-	stop)
-		ft260_unbind
-	;;
 	*)
-		echo "Usage: $0 start|stop" >&2
+		echo "Usage: $0 start" >&2
 		exit 3
 	;;
 esac
