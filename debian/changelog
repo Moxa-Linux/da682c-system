@@ -1,3 +1,10 @@
+da682c-system (1.0.1+deb9) stretch; urgency=low
+
+  * fix: merge services and follow debian standard service
+  * fix: remove uart ioctl function in misc driver
+
+ -- Elvis Yao (姚家瑋) <ElvisCW.Yao@moxa.com>  Thu, 10 Jan 2019 14:12:14 +0800
+
 da682c-system (1.0.0+deb9) stretch; urgency=low
 
   * Initial release.
