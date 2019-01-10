@@ -1,3 +1,9 @@
+da682c-system (1.0.2+deb9) stretch; urgency=low
+
+  * feat: add moxa-dio-ctl config
+
+ -- Elvis Yao (姚家瑋) <ElvisCW.Yao@moxa.com>  Thu, 10 Jan 2019 14:51:44 +0800
+
 da682c-system (1.0.1+deb9) stretch; urgency=low
 
   * fix: merge services and follow debian standard service
