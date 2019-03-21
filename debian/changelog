@@ -1,3 +1,10 @@
+da682c-system (1.0.3+deb9) stretch; urgency=low
+
+  * add security default settings
+  * update udev rules for symlink to uart interface
+
+ -- Elvis Yao (姚家瑋) <ElvisCW.Yao@moxa.com>  Thu, 21 Mar 2019 15:35:24 +0800
+
 da682c-system (1.0.2+deb9) stretch; urgency=low
 
   * feat: add moxa-dio-ctl config
