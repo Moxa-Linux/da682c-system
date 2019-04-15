@@ -1,3 +1,11 @@
+da682c-system (1.0.4+deb9) stretch; urgency=low
+
+  * feat: add lm-sensors config and update debian control file for depends
+  * feat: add saving uart mode to setinterface and init script
+  * fix: to fix failed to set xfermode error
+
+ -- Elvis Yao (姚家瑋) <ElvisCW.Yao@moxa.com>  Mon, 15 Apr 2019 15:22:14 +0800
+
 da682c-system (1.0.3+deb9) stretch; urgency=low
 
   * add security default settings
