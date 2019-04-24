@@ -1,3 +1,10 @@
+da682c-system (1.0.5+deb9) stretch; urgency=low
+
+  * feat: add network default settings
+  * fix: add update-grub on system postinst
+
+ -- Elvis Yao (姚家瑋) <ElvisCW.Yao@moxa.com>  Wed, 24 Apr 2019 15:10:21 +0800
+
 da682c-system (1.0.4+deb9) stretch; urgency=low
 
   * feat: add lm-sensors config and update debian control file for depends
