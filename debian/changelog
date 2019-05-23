@@ -1,3 +1,9 @@
+da682c-system (1.0.6+deb9) stretch; urgency=low
+
+  * fix: update DIO index due to HW change
+
+ -- Elvis Yao (姚家瑋) <ElvisCW.Yao@moxa.com>  Thu, 23 May 2019 14:18:19 +0800
+
 da682c-system (1.0.5+deb9) stretch; urgency=low
 
   * feat: add network default settings
