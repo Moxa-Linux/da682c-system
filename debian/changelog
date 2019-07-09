@@ -1,3 +1,10 @@
+da682c-system (1.0.8+deb9) stretch; urgency=low
+
+  * feat: add gpio-pca953x to source dir
+  * fix: rename persistent network to enp7s0
+
+ -- Elvis Yao (姚家瑋) <ElvisCW.Yao@moxa.com>  Tue, 09 Jul 2019 16:54:40 +0800
+
 da682c-system (1.0.7+deb9) stretch; urgency=low
 
   * fix: remove default network interface files
