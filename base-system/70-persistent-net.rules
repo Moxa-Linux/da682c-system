@@ -1,0 +1,2 @@
+# rename network interfaces to sort PCI bus number
+SUBSYSTEM=="net", ACTION=="add", DRIVERS=="igb", ATTR{ifindex}=="6", NAME="enp2s0"
