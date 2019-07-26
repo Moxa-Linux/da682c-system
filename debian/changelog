@@ -1,3 +1,28 @@
+da682c-system (1.0.9+deb9) stretch; urgency=low
+
+  * feat: add mx-ver to show firmware information
+  * fix: update kversion get product name function
+  * fix: fix typo for mx-ver
+  * fix: da682c-modules needs to depends on linux-image-4.9.0-9-amd64
+
+ -- Elvis Yao (姚家瑋) <ElvisCW.Yao@moxa.com>  Fri, 19 Jul 2019 17:18:20 +0800
+
+da682c-system (1.0.8+deb9) stretch; urgency=low
+
+  * feat: add gpio-pca953x to source dir
+  * fix: rename persistent network to enp7s0
+
+ -- Elvis Yao (姚家瑋) <ElvisCW.Yao@moxa.com>  Tue, 09 Jul 2019 16:54:40 +0800
+
+da682c-system (1.0.7+deb9) stretch; urgency=low
+
+  * fix: remove default network interface files
+  * fix: update 10-serial.rules to create ttyM0 & ttyM1
+  * fix: upgrade kernel modules to 4.9.0-9-amd64
+  * feat: add rename persistent network interface udev rules
+
+ -- Elvis Yao (姚家瑋) <ElvisCW.Yao@moxa.com>  Tue, 02 Jul 2019 11:31:36 +0800
+
 da682c-system (1.0.6+deb9) stretch; urgency=low
 
   * fix: update DIO index due to HW change

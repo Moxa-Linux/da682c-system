@@ -18,6 +18,7 @@ Description: Base system for DA-682C
 Package: da682c-modules
 Architecture: any
 Depends: ${misc:Depends},
+         linux-image-4.9.0-9-amd64 (>= 4.9.168-1)
 Description: DA-682C standard kernel modules
  The Linux kernel modules for use on DA-682C
 

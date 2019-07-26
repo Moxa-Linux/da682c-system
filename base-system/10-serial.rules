@@ -1,5 +1,5 @@
-KERNEL=="ttyS[0-1]*", KERNELS=="00:05", SUBSYSTEM=="tty", ACTION=="add", SYMLINK+="ttyM0"
-KERNEL=="ttyS[0-1]*", KERNELS=="00:06", SUBSYSTEM=="tty", ACTION=="add", SYMLINK+="ttyM1"
+KERNEL=="ttyS[0-1]*", KERNELS=="ttyS0", SUBSYSTEM=="tty", ACTION=="add", SYMLINK+="ttyM0"
+KERNEL=="ttyS[0-1]*", KERNELS=="ttyS1", SUBSYSTEM=="tty", ACTION=="add", SYMLINK+="ttyM1"
 KERNEL=="ttyUSB[0-9]*", KERNELS=="1-9.1:1.0", SUBSYSTEM=="tty", ACTION=="add", PROGRAM="/bin/sh -c 'echo $((%n+2))'", SYMLINK+="ttyM%c"
 KERNEL=="ttyUSB[0-9]*", KERNELS=="1-9.1:1.1", SUBSYSTEM=="tty", ACTION=="add", PROGRAM="/bin/sh -c 'echo $((%n+2))'", SYMLINK+="ttyM%c"
 KERNEL=="ttyUSB[0-9]*", KERNELS=="1-9.1:1.2", SUBSYSTEM=="tty", ACTION=="add", PROGRAM="/bin/sh -c 'echo $((%n+2))'", SYMLINK+="ttyM%c"
