@@ -1,3 +1,10 @@
+da682c-system (1.0.10+deb9) stretch; urgency=low
+
+  * fix: update moxa_da682c_misc for uart rs422 pull high RTS
+  * fix: update mx-ver for removing -a option
+
+ -- Elvis Yao (姚家瑋) <ElvisCW.Yao@moxa.com>  Mon, 29 Jul 2019 16:53:29 +0800
+
 da682c-system (1.0.9+deb9) stretch; urgency=low
 
   * feat: add mx-ver to show firmware information
