@@ -1,3 +1,10 @@
+da682c-system (1.0.11+deb9) stretch; urgency=low
+
+  * feat: add S3 suspend back event to reload ftdi driver
+  * fix: remove check FT260 driver in setinterface
+
+ -- Elvis Yao (姚家瑋) <ElvisCW.Yao@moxa.com>  Tue, 03 Sep 2019 17:32:20 +0800
+
 da682c-system (1.0.10+deb9) stretch; urgency=low
 
   * fix: update moxa_da682c_misc for uart rs422 pull high RTS
