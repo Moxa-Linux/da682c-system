@@ -83,8 +83,8 @@ setup_default_uart_mode() {
 
 # workaround for FT260 cant send i2c message when warm reboot
 check_ft260_is_alive() {
-	setif_res=$(/sbin/setinterface /dev/ttyM2 0)
-	if [ "$setif_res" != "Now setting is RS232 mode" ]; then
+	${UARTPROG} /dev/ttyM2
+	if [ $? != 0 ]; then
 		echo "FT260 is broken, rebind USB host driver."
 		echo -n "0000:00:14.0" | tee /sys/bus/pci/drivers/xhci_hcd/unbind
 		sleep 3
@@ -94,6 +94,8 @@ check_ft260_is_alive() {
 		# re-bind drivers again
 		start_process
 	fi
+
+	# if FT260 was checked okay, do nothing.
 }
 
 start_process() {
