@@ -1,3 +1,10 @@
+da682c-system (1.0.13) stretch; urgency=medium
+
+  * fix: support to detect expansion card when re-binding ft260
+  * fix: must return 0 otherwise systemctl will fail
+
+ -- Wes Huang <Wes.Huang@moxa.com>  Thu, 03 Oct 2019 01:55:53 -0400
+
 da682c-system (1.0.12+deb9) stretch; urgency=low
 
   * fix: add workaround for FT260 when init
