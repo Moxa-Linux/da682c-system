@@ -3,7 +3,7 @@
 #
 # see: dh_installdeb(1)
 
-set -e
+#set -e
 
 # summary of how this script can be called:
 #        * <postinst> `configure' <most-recently-configured-version>
@@ -17,22 +17,35 @@ set -e
 # for details, see http://www.debian.org/doc/debian-policy/ or
 # the debian-policy package
 
-
+MOD_FILE="/etc/modules"
 case "$1" in
-    configure)
-    echo "i2c-dev" >> /etc/modules
-    echo "misc-moxa-da682c" >> /etc/modules
-    echo "hid-ft260" >> /etc/modules
-    echo "gpio-pca953x" >> /etc/modules
-    ;;
+	configure)
+	if ! grep -wq "i2c-dev" $MOD_FILE ;\
+		then echo "i2c-dev" >> $MOD_FILE; fi
+	if ! grep -wq "misc-moxa-da682c" $MOD_FILE ;\
+		then echo "misc-moxa-da682c" >> $MOD_FILE; fi
+	if ! grep -wq "hid-ft260" $MOD_FILE ;\
+		then echo "hid-ft260" >> $MOD_FILE; fi
+	if ! grep -wq "gpio-pca953x" $MOD_FILE ;\
+		then echo "gpio-pca953x" >> $MOD_FILE; fi
+	if ! grep -wq "it8786_wdt" $MOD_FILE;\
+		 then echo "it8786_wdt" >> $MOD_FILE; fi
+	if ! grep -wq "it87" $MOD_FILE;\
+		 then echo "it87" >> $MOD_FILE; fi
 
-    abort-upgrade|abort-remove|abort-deconfigure)
-    ;;
+	# fix failed to set xfermode (err_mask=0x40) error
+	sed -i 's/GRUB_CMDLINE_LINUX_DEFAULT=.*/GRUB_CMDLINE_LINUX_DEFAULT="quiet libata.force=noncq"/g' /etc/default/grub
+	update-grub
 
-    *)
-        echo "postinst called with unknown argument \`$1'" >&2
-        exit 1
-    ;;
+	;;
+
+	abort-upgrade|abort-remove|abort-deconfigure)
+	;;
+
+	*)
+	echo "postinst called with unknown argument \`$1'" >&2
+	exit 1
+	;;
 esac
 
 # dh_installdeb will replace this with shell code automatically
