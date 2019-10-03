@@ -1,3 +1,9 @@
+da682c-system (1.0.14) stretch; urgency=medium
+
+  * fix: display a recovery message to notify the user
+
+ -- Wes Huang <Wes.Huang@moxa.com>  Thu, 03 Oct 2019 04:45:33 -0400
+
 da682c-system (1.0.13) stretch; urgency=medium
 
   * fix: support to detect expansion card when re-binding ft260
