@@ -1,2 +1,2 @@
 # rename network interfaces to sort PCI bus number
-SUBSYSTEM=="net", ACTION=="add", DRIVERS=="igb", ENV{DEVPATH}=="/devices/pci0000:00/0000:00:1c.5/*", NAME="enp7s0"
+SUBSYSTEM=="net", ACTION=="add", DRIVERS=="igb", ENV{DEVPATH}=="/devices/pci0000:00/0000:00:1c.5/*", NAME="enp30s0"
