@@ -1,0 +1,27 @@
+{
+	"CONFIG_VERSION": "1.1.1",
+	"LED_TYPES": [
+		{
+			"TYPE": "SIGNAL",
+			"NUM_OF_GROUPS": 0,
+			"NUM_OF_LEDS_PER_GROUP": 0
+		},
+		{
+			"TYPE": "PROGRAMMABLE",
+			"NUM_OF_GROUPS": 1,
+			"NUM_OF_LEDS_PER_GROUP": 8,
+			"PATHS": [
+				[
+					"DA682C:GREEN:PRG1",
+					"DA682C:GREEN:PRG2",
+					"DA682C:GREEN:PRG3",
+					"DA682C:GREEN:PRG4",
+					"DA682C:GREEN:PRG5",
+					"DA682C:GREEN:PRG6",
+					"DA682C:GREEN:PRG7",
+					"DA682C:GREEN:PRG8"
+				]
+			]
+		}
+	]
+}
