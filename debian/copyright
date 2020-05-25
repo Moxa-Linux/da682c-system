@@ -1,13 +1,13 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: da682c-system
-Source: http://gitlab.syssw.moxa.com/MXcore-Package/uc3100-system
+Source: http://gitlab.syssw.moxa.com/MXcore-Package/da682c-system
 
 Files: *
-Copyright: 2018 Moxa Corp.
+Copyright: 2020 Moxa Corp.
 License:   Apache-2.0
 
 Files: debian/*
-Copyright: 2018 Elvis Yao <ElvisCW.Yao@moxa.com>
+Copyright: 2020 Elvis Yao <ElvisCW.Yao@moxa.com>
 License:   Apache-2.0
 
 License:   Apache-2.0
