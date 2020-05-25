@@ -1,0 +1,15 @@
+[Unit]
+Description=Moxa DA682C series initial setting
+Requires=sys-devices-pnp0-00:05-tty-ttyS0.device
+After=sys-devices-pnp0-00:05-tty-ttyS0.device
+Before=rc-local.service
+
+[Service]
+Type=oneshot
+ExecStart=/sbin/da682c_platform_init start
+ExecStop=/sbin/da682c_platform_init stop
+RemainAfterExit=yes
+ExecStartPre=/bin/sleep 1
+
+[Install]
+WantedBy=multi-user.target
