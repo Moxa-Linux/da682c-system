@@ -1,3 +1,25 @@
+da682c-system (1.2.0) stretch; urgency=medium
+
+  * refactor: change base-system to root file system style
+  * refactor: move moxa-configs to base-system
+  * feat: add mx-led-ctl support
+  * fix: change LAN2 internet interface name to enp30s0
+
+ -- Elvis Yao (姚家瑋) <ElvisCW.Yao@moxa.com>  Mon, 25 May 2020 11:58:37 +0800
+
+da682c-system (1.1.0) stretch; urgency=medium
+
+  * fix: add init gpio functions to init file
+  * feat: support moxa-dio-control
+  * feat: support moxa-uart-control
+  * feat: support to update moxa-version.conf file when DIFB building image
+  * feat: add MXview support
+  * refactor: to deprecate unused base system files
+  * refactor: deprected due to security scenario is not defined
+  * refactor: remove firmware files and update README.md
+
+ -- Elvis Yao (姚家瑋) <ElvisCW.Yao@moxa.com>  Tue, 25 Feb 2020 17:09:50 +0800
+
 da682c-system (1.0.14) stretch; urgency=medium
 
   * fix: display a recovery message to notify the user
