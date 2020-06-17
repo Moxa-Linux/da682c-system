@@ -1,3 +1,14 @@
+da682c-system (1.2.1) stretch; urgency=medium
+
+  * refactor: DIO init is handled by mx-dio-ctl
+  * fix: remove setup relay output value when boot
+  * fix: remove setup DIO output value when boot
+  * fix: replace /sbin/mx-uart-ctl as UARTPROG parameter
+  * fix: debian: add depends on moxa libs
+  * fix: debian: update init service requires as dev-ttyS0.device
+
+ -- Elvis Yao (姚家瑋) <ElvisCW.Yao@moxa.com>  Tue, 16 Jun 2020 15:30:24 +0800
+
 da682c-system (1.2.0) stretch; urgency=medium
 
   * refactor: change base-system to root file system style
