@@ -1,3 +1,9 @@
+da682c-system (1.2.2) stretch; urgency=medium
+
+  * fix: debian: update moxa-hsrprp-tools depends 1.1.2
+
+ -- Elvis Yao (姚家瑋) <ElvisCW.Yao@moxa.com>  Fri, 03 Jul 2020 10:33:04 +0800
+
 da682c-system (1.2.1) stretch; urgency=medium
 
   * refactor: DIO init is handled by mx-dio-ctl
