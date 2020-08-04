@@ -1,3 +1,9 @@
+da682c-system (1.2.3) stretch; urgency=medium
+
+  * fix: change serial udev rules due to AMT port mapping issue
+
+ -- Elvis Yao (姚家瑋) <ElvisCW.Yao@moxa.com>  Fri, 31 Jul 2020 17:34:18 +0800
+
 da682c-system (1.2.2) stretch; urgency=medium
 
   * fix: debian: update moxa-hsrprp-tools depends 1.1.2
